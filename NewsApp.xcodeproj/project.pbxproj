@@ -14,7 +14,9 @@
 		86D10D952577854F0060A1F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D10D932577854F0060A1F5 /* LaunchScreen.storyboard */; };
 		86D10D9F257786B40060A1F5 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D10D9E257786B40060A1F5 /* News.swift */; };
 		86D10DA4257787860060A1F5 /* NewsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D10DA3257787860060A1F5 /* NewsStore.swift */; };
-		86D10DA92577D0BC0060A1F5 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D10DA82577D0BC0060A1F5 /* NewsView.swift */; };
+		86D10DA92577D0BC0060A1F5 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D10DA82577D0BC0060A1F5 /* NewsListView.swift */; };
+		86DC44F025789C77005A986F /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DC44EF25789C77005A986F /* NewsView.swift */; };
+		86DFE6D92578A8030039A0B5 /* SocialCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DFE6D82578A8030039A0B5 /* SocialCountView.swift */; };
 		86F2C39E25788770004CB6B7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F2C39D25788770004CB6B7 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +30,9 @@
 		86D10D962577854F0060A1F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86D10D9E257786B40060A1F5 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		86D10DA3257787860060A1F5 /* NewsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStore.swift; sourceTree = "<group>"; };
-		86D10DA82577D0BC0060A1F5 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		86D10DA82577D0BC0060A1F5 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		86DC44EF25789C77005A986F /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		86DFE6D82578A8030039A0B5 /* SocialCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialCountView.swift; sourceTree = "<group>"; };
 		86F2C39D25788770004CB6B7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,16 +106,26 @@
 		86D10DA72577D08B0060A1F5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				86D10DAD2577E20F0060A1F5 /* News */,
+				86D10DAD2577E20F0060A1F5 /* NewsList */,
+				86DC44EE25789C58005A986F /* News */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		86D10DAD2577E20F0060A1F5 /* News */ = {
+		86D10DAD2577E20F0060A1F5 /* NewsList */ = {
 			isa = PBXGroup;
 			children = (
-				86D10DA82577D0BC0060A1F5 /* NewsView.swift */,
+				86D10DA82577D0BC0060A1F5 /* NewsListView.swift */,
 				86F2C39D25788770004CB6B7 /* HeaderView.swift */,
+				86DFE6D82578A8030039A0B5 /* SocialCountView.swift */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		86DC44EE25789C58005A986F /* News */ = {
+			isa = PBXGroup;
+			children = (
+				86DC44EF25789C77005A986F /* NewsView.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -189,9 +203,11 @@
 				86D10D89257785490060A1F5 /* AppDelegate.swift in Sources */,
 				86F2C39E25788770004CB6B7 /* HeaderView.swift in Sources */,
 				86D10D8B257785490060A1F5 /* SceneDelegate.swift in Sources */,
+				86DC44F025789C77005A986F /* NewsView.swift in Sources */,
 				86D10DA4257787860060A1F5 /* NewsStore.swift in Sources */,
-				86D10DA92577D0BC0060A1F5 /* NewsView.swift in Sources */,
+				86D10DA92577D0BC0060A1F5 /* NewsListView.swift in Sources */,
 				86D10D9F257786B40060A1F5 /* News.swift in Sources */,
+				86DFE6D92578A8030039A0B5 /* SocialCountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +351,7 @@
 				DEVELOPMENT_TEAM = 3QRX7UL3Y5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NewsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +373,7 @@
 				DEVELOPMENT_TEAM = 3QRX7UL3Y5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NewsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

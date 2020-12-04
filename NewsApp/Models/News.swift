@@ -12,5 +12,6 @@ struct News: Identifiable {
     let title: String
     let description: String
     let date: String
+    let author: String
     let imageName: String
 }

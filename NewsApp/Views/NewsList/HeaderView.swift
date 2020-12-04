@@ -14,7 +14,7 @@ struct HeaderView: View {
             Text(text).font(.headline).padding(24)
         }
         .frame(width: UIScreen.main.bounds.width, height: 36, alignment: .leading)
-        .background(Color.white)
+        .background(Color(UIColor.systemBackground))
     }
 }
 
