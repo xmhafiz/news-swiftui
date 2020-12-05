@@ -50,7 +50,7 @@ struct NewsRowView: View {
                 Text(news.description).lineLimit(2).font(.subheadline)
                 Text(news.date)
                     .foregroundColor(.gray)
-                    .font(.system(size: 14, weight: .medium, design: .default))
+                    .font(.subheadline)
             })
         }
         .padding(8.0)
@@ -70,7 +70,7 @@ struct NewsHeadlineView: View {
                 Text(news.title).font(.title).lineLimit(2)
                 Text(news.date)
                     .foregroundColor(.gray)
-                    .font(.system(size: 14, weight: .medium, design: .default))
+                    .font(.subheadline)
                 Text(news.description).lineLimit(3).font(.subheadline)
             })
             SocialCountView()
