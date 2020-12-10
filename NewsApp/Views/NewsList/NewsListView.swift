@@ -32,6 +32,8 @@ struct NewsListView: View {
             }
             .navigationBarTitle("Home")
         }
+        // prevent iPad split view
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
