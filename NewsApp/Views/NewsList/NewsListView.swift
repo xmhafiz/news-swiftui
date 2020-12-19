@@ -15,6 +15,7 @@ struct NewsListView: View {
                 Section(header: HeaderView(text: "Headline")) {
                     let headline = newsList.last!
                     ZStack {
+                        // embed as hidden in ZStack to remove right arrow
                         NavigationLink(destination: NewsView(news: headline)) {
                             //
                         }
@@ -50,7 +51,7 @@ struct NewsRowView: View {
             VStack(alignment: .leading, spacing: 4.0, content: {
                 Text(news.title).font(.headline).lineLimit(2)
                 Text(news.description).lineLimit(2).font(.subheadline)
-                Text(news.date)
+                Text(news.dateString)
                     .foregroundColor(.gray)
                     .font(.subheadline)
             })
@@ -70,12 +71,11 @@ struct NewsHeadlineView: View {
                 
             VStack(alignment: .leading, spacing: 8.0, content: {
                 Text(news.title).font(.title).lineLimit(2)
-                Text(news.date)
+                Text(news.dateString)
                     .foregroundColor(.gray)
                     .font(.subheadline)
                 Text(news.description).lineLimit(3).font(.subheadline)
             })
-            SocialCountView()
         }
         .padding(8.0)
     }
